@@ -1,32 +1,42 @@
-# userrift.exe
+# userrift.github.io
 
-A Windows XP-inspired personal site for GitHub Pages.
+A public, editable Windows XP / early-MySpace personal site hosted with GitHub Pages.
 
-## Features
-
-- Draggable desktop windows
-- Desktop shortcuts and a working Recycle Bin interaction
-- Spinning vinyl music player
-- Local MP3 preview picker
-- About and software/project windows
-- Click-to-catch desktop mini game
-- Start menu, taskbar, clock, minimize/maximize/close controls
-- Responsive mobile layout
-
-## Add your music
-
-Place an MP3 at:
+## Source files
 
 ```text
-music/song.mp3
+.
+├── index.html              # page structure and profile content
+├── style.css               # Windows XP / MySpace styling
+├── script.js               # windows, dragging, player, Start menu, recycle bin
+├── .nojekyll               # serves the files directly through GitHub Pages
+├── assets/
+│   ├── background.jpg
+│   ├── aesthetic-ref.jpg
+│   ├── computer.svg
+│   ├── folder.svg
+│   ├── cd.svg
+│   ├── phone.svg
+│   ├── recycle.svg
+│   ├── notepad.svg
+│   └── eye-window.svg
+└── music/
+    └── song.mp3            # track loaded by the vinyl player
 ```
 
-The built-in player will load it automatically. Keep the file reasonably small for fast Pages loading and only upload audio you have permission to publish.
+Everything needed by the live page is stored publicly in this repository. The SVG icons are plain text and can be opened or edited directly on GitHub.
 
-## Personalize
+## Editing
 
-Edit `index.html` to replace the About text and project cards. Search for `userrift` to change the displayed name or profile links.
+- Edit profile copy and project cards in `index.html`.
+- Edit layout, colors, windows, and portrait styling in `style.css`.
+- Edit interactions and music-player behavior in `script.js`.
+- Replace `music/song.mp3` with an MP3 you have permission to publish.
+
+## Downloading everything
+
+Use GitHub’s **Code → Download ZIP** button to download the entire repository, including assets, scripts, and music.
 
 ## GitHub Pages
 
-This repo is intended to be named `userrift.github.io`. Once pushed, open repository **Settings → Pages**, select **Deploy from a branch**, and choose the default branch at `/ (root)`.
+The live site is published from the `main` branch at the repository root.
