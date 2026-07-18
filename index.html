@@ -1,124 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#245edb" />
-  <title>userrift.exe</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main id="desktop" aria-label="Windows XP inspired portfolio desktop">
-    <div class="noise" aria-hidden="true"></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#245edb"><title>userrift's place</title><link rel="stylesheet" href="style.css"></head>
+<body><main id="desktop">
+<div class="scanlines"></div>
+<section class="desktop-icons">
+<button class="desktop-icon draggable" data-window="profileWindow" data-name="Profile"><img src="assets/computer.png"><span>My Profile</span></button>
+<button class="desktop-icon draggable" data-window="softwareWindow" data-name="Software"><img src="assets/folder.png"><span>My Software</span></button>
+<button class="desktop-icon draggable" data-window="playerWindow" data-name="Music"><img src="assets/cd.png"><span>Music Player</span></button>
+<a class="desktop-icon draggable" data-name="GitHub" href="https://github.com/userrift" target="_blank"><img src="assets/phone.png"><span>Contact Me</span></a>
+</section>
+<button id="recycleBin" class="desktop-icon recycle"><img id="binIcon" src="assets/recycle.png"><span>Recycle Bin</span></button>
 
-    <section class="desktop-icons" aria-label="Desktop shortcuts">
-      <button class="desktop-icon draggable" data-window="aboutWindow" data-name="About Me">
-        <span class="icon monitor">🖥️</span><span>About Me</span>
-      </button>
-      <button class="desktop-icon draggable" data-window="softwareWindow" data-name="My Software">
-        <span class="icon">📁</span><span>My Software</span>
-      </button>
-      <button class="desktop-icon draggable" data-window="playerWindow" data-name="Music Player">
-        <span class="icon">💿</span><span>Music Player</span>
-      </button>
-      <a class="desktop-icon draggable" data-name="GitHub" href="https://github.com/userrift" target="_blank" rel="noreferrer">
-        <span class="icon">🌐</span><span>GitHub</span>
-      </a>
-    </section>
+<section class="window active" id="profileWindow" style="--x:19vw;--y:6vh;--w:min(760px,78vw)">
+<header class="titlebar drag-handle"><span>🌐 userrift's MySpace</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header>
+<div class="menu-bar">File &nbsp; Edit &nbsp; View &nbsp; Favorites &nbsp; Tools &nbsp; Help</div>
+<div class="browser-bar"><button>←</button><button>→</button><span>Address</span><input value="http://userrift.github.io/myspace" readonly><button>Go</button></div>
+<div class="window-body profile-page">
+<div class="profile-left">
+<h1>userrift</h1><div class="online">● Online Now!</div>
+<div class="portrait" aria-label="stylized alternative profile portrait"><div class="hair"></div><div class="face"><span class="eye e1"></span><span class="eye e2"></span><span class="mouth"></span></div><div class="piercing">✦</div><div class="shirt">RIFT</div></div>
+<p class="mood"><b>Mood:</b> restless<br><b>Status:</b> coding at 2:13am</p>
+<div class="contact-box"><h3>Contacting userrift</h3><div class="contact-grid"><a href="https://github.com/userrift">✉ Send Message</a><button data-open="playerWindow">♫ Add to Friends</button><button data-open="softwareWindow">★ View Projects</button><button id="blinkBtn">⚡ Instant Message</button></div></div>
+</div>
+<div class="profile-main">
+<div class="marquee"><span>★ welcome to my page ★ strange software ★ loud music ★ old internet forever ★</span></div>
+<section class="myspace-box"><h2>About Me</h2><p>I’m <b>userrift</b> — a developer, digital tinkerer, and collector of interfaces that feel slightly haunted. I like expressive software, games, old web graphics, weird tools, and making computers feel personal again.</p><p class="sparkle">x_x&nbsp;&nbsp; this page is best viewed after midnight &nbsp;&nbsp;x_x</p></section>
+<section class="myspace-box"><h2>Who I'd Like to Meet</h2><p>People making odd, sincere, useful, noisy, tiny, beautiful things on the internet.</p></section>
+<section class="myspace-box friends"><h2>userrift's Top 4</h2><div><button data-open="softwareWindow">SOFTWARE</button><button data-open="playerWindow">MUSIC</button><a href="https://github.com/userrift">GITHUB</a><button id="secretBtn">SECRET</button></div></section>
+<section class="comments"><h2>Comments</h2><p><b>Tom:</b> Thanks for the add. Your page is extremely cool.</p><p><b>unknown.exe:</b> the internet was better when every page had a song</p></section>
+</div></div></section>
 
-    <button id="recycleBin" class="desktop-icon recycle" aria-label="Recycle Bin drop target">
-      <span class="icon" id="binIcon">🗑️</span><span>Recycle Bin</span>
-    </button>
+<section class="window hidden" id="softwareWindow" style="--x:10vw;--y:13vh;--w:min(650px,82vw)"><header class="titlebar drag-handle"><span>📁 C:\My Software</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header><div class="toolbar"><button>Back</button><button>Search</button><button>Folders</button></div><div class="window-body explorer"><aside><b>File and Folder Tasks</b><a href="https://github.com/userrift?tab=repositories">View all repositories</a><button data-open="profileWindow">Back to profile</button></aside><div class="project-grid"><article><img src="assets/notepad.png"><h3>Project_01.exe</h3><p>A featured tool or strange little program.</p><a href="https://github.com/userrift">Open</a></article><article><img src="assets/eye-window.png"><h3>GhostMachine.exe</h3><p>Experiments, prototypes, and digital curiosities.</p><a href="https://github.com/userrift?tab=repositories">Browse</a></article><article><img src="assets/folder.png"><h3>unfinished_stuff</h3><p>Works in progress and ideas that may wake up later.</p><a href="https://github.com/userrift?tab=repositories">Explore</a></article></div></div></section>
 
-    <div id="gameHud" class="xp-tooltip">
-      <b>Desktop Critter</b><br />Catch the pixel bug: <span id="score">0</span>
-    </div>
-    <button id="critter" aria-label="Catch the pixel bug">👾</button>
+<section class="window hidden player-window" id="playerWindow" style="--x:35vw;--y:20vh;--w:min(520px,82vw)"><header class="titlebar drag-handle"><span>▶ Windows Media Player</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header><div class="menu-bar">File &nbsp; View &nbsp; Play &nbsp; Tools &nbsp; Help</div><div class="media-screen"><div id="vinyl" class="vinyl"><div class="label">RIFT<br><small>01</small></div></div><div class="now-playing"><small>NOW PLAYING</small><strong id="trackTitle">music/song.mp3</strong><span id="playerStatus">Put your MP3 in the repo or choose one locally.</span></div></div><div class="player-controls"><button id="playButton" class="round">▶</button><input id="seek" type="range" min="0" max="100" value="0"><label class="xp-button file-button">Choose MP3<input id="filePicker" type="file" accept="audio/*"></label></div><audio id="audio" preload="metadata" src="music/song.mp3"></audio></section>
 
-    <section class="window active" id="welcomeWindow" style="--x: 23vw; --y: 8vh; --w: min(650px, 72vw);">
-      <header class="titlebar drag-handle">
-        <span>🌐 userrift.exe — Home</span>
-        <div class="window-buttons">
-          <button data-action="minimize" aria-label="Minimize">_</button>
-          <button data-action="maximize" aria-label="Maximize">□</button>
-          <button data-action="close" aria-label="Close">×</button>
-        </div>
-      </header>
-      <div class="menu-bar">File&nbsp;&nbsp; Edit&nbsp;&nbsp; View&nbsp;&nbsp; Favorites&nbsp;&nbsp; Help</div>
-      <div class="window-body hero">
-        <div>
-          <p class="eyebrow">WELCOME TO MY INTERNET CORNER</p>
-          <h1>Hi, I’m <span>userrift</span>.</h1>
-          <p>I make software, strange little web experiments, and things that feel like finding an old computer in a quiet room.</p>
-          <div class="button-row">
-            <button class="xp-button" data-open="aboutWindow">About me</button>
-            <button class="xp-button" data-open="softwareWindow">Open projects</button>
-          </div>
-          <p class="hint">Tip: drag desktop icons into the Recycle Bin. Double-click icons to open them.</p>
-        </div>
-        <div class="avatar-card" aria-label="Profile placeholder">
-          <div class="pixel-face">:-)</div>
-          <small>user_profile.bmp</small>
-        </div>
-      </div>
-    </section>
-
-    <section class="window hidden" id="aboutWindow" style="--x: 12vw; --y: 15vh; --w: min(560px, 78vw);">
-      <header class="titlebar drag-handle"><span>📄 About Me.txt</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header>
-      <div class="window-body document">
-        <h2>About me</h2>
-        <p>I’m userrift, a developer and digital tinkerer interested in expressive interfaces, useful tools, games, and nostalgic software design.</p>
-        <p>This page is intentionally built like a tiny desktop: windows can be dragged, icons can be recycled, and the background contains a small click-to-catch game.</p>
-        <fieldset><legend>Currently</legend><p>Building: curious software<br />Learning: whatever the next project requires<br />Listening: add your MP3 to <code>music/song.mp3</code></p></fieldset>
-      </div>
-    </section>
-
-    <section class="window hidden" id="softwareWindow" style="--x: 37vw; --y: 18vh; --w: min(600px, 76vw);">
-      <header class="titlebar drag-handle"><span>📁 My Software</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header>
-      <div class="toolbar"><button>Back</button><button>Search</button><button>Folders</button></div>
-      <div class="window-body explorer">
-        <aside><b>Project Tasks</b><a href="https://github.com/userrift" target="_blank" rel="noreferrer">View GitHub profile</a><button data-open="aboutWindow">Read about me</button></aside>
-        <div class="project-grid">
-          <article><span>🧰</span><h3>Project One</h3><p>Replace this with a featured repository and a one-line description.</p><a href="https://github.com/userrift" target="_blank" rel="noreferrer">Open</a></article>
-          <article><span>🎮</span><h3>Project Two</h3><p>A game, experiment, tool, or other favorite piece of software.</p><a href="https://github.com/userrift?tab=repositories" target="_blank" rel="noreferrer">Open</a></article>
-          <article><span>🧪</span><h3>Lab</h3><p>Small unfinished ideas, prototypes, and web curiosities.</p><a href="https://github.com/userrift?tab=repositories" target="_blank" rel="noreferrer">Browse</a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="window hidden player-window" id="playerWindow" style="--x: 28vw; --y: 22vh; --w: min(520px, 80vw);">
-      <header class="titlebar drag-handle"><span>▶ Windows Media Player</span><div class="window-buttons"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></header>
-      <div class="menu-bar">File&nbsp;&nbsp; View&nbsp;&nbsp; Play&nbsp;&nbsp; Tools&nbsp;&nbsp; Help</div>
-      <div class="media-screen">
-        <div id="vinyl" class="vinyl"><div class="label">RIFT<br /><small>01</small></div></div>
-        <div class="now-playing"><small>NOW PLAYING</small><strong id="trackTitle">music/song.mp3</strong><span id="playerStatus">Add an MP3 to the repo or choose a local file.</span></div>
-      </div>
-      <div class="player-controls">
-        <button id="playButton" class="round" aria-label="Play or pause">▶</button>
-        <input id="seek" type="range" min="0" max="100" value="0" aria-label="Seek" />
-        <label class="xp-button file-button">Choose MP3<input id="filePicker" type="file" accept="audio/mpeg,audio/*" /></label>
-      </div>
-      <audio id="audio" preload="metadata" src="music/song.mp3"></audio>
-    </section>
-
-    <div id="startMenu" class="start-menu hidden">
-      <div class="start-user"><div class="mini-avatar">:-)</div><b>userrift</b></div>
-      <div class="start-content">
-        <div><button data-open="aboutWindow">📄 About Me</button><button data-open="softwareWindow">📁 My Software</button><button data-open="playerWindow">💿 Music Player</button><a href="https://github.com/userrift" target="_blank" rel="noreferrer">🌐 GitHub</a></div>
-        <div class="pale"><button id="restoreIcons">🖥️ Restore Desktop Icons</button><button id="resetGame">🎮 Reset Mini Game</button></div>
-      </div>
-      <div class="start-footer"><button id="logoff">🔑 Log Off</button><button id="shutdown">⏻ Turn Off Computer</button></div>
-    </div>
-
-    <footer class="taskbar">
-      <button id="startButton" class="start-button"><span>⊞</span> start</button>
-      <div id="tasks" class="tasks"></div>
-      <div class="tray"><span>🔊</span><time id="clock"></time></div>
-    </footer>
-
-    <div id="toast" role="status" aria-live="polite"></div>
-    <div id="shutdownScreen" class="shutdown hidden"><p>It is now safe to turn off your computer.</p><button>Restart</button></div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<div id="startMenu" class="start-menu hidden"><div class="start-user"><div class="mini-avatar">x_x</div><b>userrift</b></div><div class="start-content"><div><button data-open="profileWindow">🌐 My Profile</button><button data-open="softwareWindow">📁 My Software</button><button data-open="playerWindow">💿 Music Player</button><a href="https://github.com/userrift">🐙 GitHub</a></div><div class="pale"><button id="restoreIcons">🖥 Restore Icons</button><button id="changeMood">☁ Change Mood</button></div></div><div class="start-footer"><button id="logoff">🔑 Log Off</button><button id="shutdown">⏻ Turn Off</button></div></div>
+<footer class="taskbar"><button id="startButton" class="start-button"><span>⊞</span> start</button><div id="tasks" class="tasks"></div><div class="tray"><span>♫</span><time id="clock"></time></div></footer><div id="toast"></div><div id="shutdownScreen" class="shutdown hidden"><p>It is now safe to turn off your computer.</p><button>Restart</button></div>
+</main><script src="script.js"></script></body></html>
